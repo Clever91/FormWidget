@@ -2,10 +2,10 @@
 
 abstract class HtmlElement
 {
-    public $key;
-    public $value;
-    public $type;
-    public $placeholder;
+    public string $key;
+    public string $value;
+    public string $type;
+    public string $placeholder;
 
     public function __construct($key, $value)
     {
