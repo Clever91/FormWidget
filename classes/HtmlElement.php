@@ -7,7 +7,7 @@ abstract class HtmlElement
     public string $type;
     public string $placeholder;
 
-    public function __construct($key, $placeholder)
+    public function __construct(string $key, string $placeholder)
     {
         $this->key = $key;
         $this->placeholder = $placeholder;

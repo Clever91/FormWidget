@@ -4,7 +4,7 @@ include_once __DIR__."/HtmlElement.php";
 
 class Button extends HtmlElement
 {
-    public function __construct($type, $value)
+    public function __construct(string $type, string $value)
     {
         $this->type = $this->key = $type;
         $this->value = $value;
@@ -12,7 +12,7 @@ class Button extends HtmlElement
 
     public function render()
     {
-        echo "<button type='{$this->type}' name='{$this->key}'>{$this->value}</button>";
+        return "<button type='{$this->type}' name='{$this->key}'>{$this->value}</button>";
     }
 }
 

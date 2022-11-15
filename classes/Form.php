@@ -8,10 +8,10 @@ class Form
     private string $method;
     private array $elements = [];
 
-    public function __construct($act, $meth = "get")
+    public function __construct(string $action, string $method = "get")
     {
-        $this->action = $act;
-        $this->method = $meth;
+        $this->action = $action;
+        $this->method = $method;
     }
 
     public function addElement(HtmlElement $elem): void
@@ -21,11 +21,8 @@ class Form
 
     public function render()
     {
-        echo "<form action='{$this->action}' method='$this->method'>";
-        foreach($this->elements as $elem) {
-            $elem->render();
-        }
-        echo "</form>";
+        $content = implode(PHP_EOL, array_map(fn($el) => $el->render(), $this->elements));
+        return sprintf("<form action='%s' method='%s'>%s</form>", $this->action, $this->method, $content);
     }
 }
 
