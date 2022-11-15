@@ -7,10 +7,10 @@ abstract class HtmlElement
     public string $type;
     public string $placeholder;
 
-    public function __construct($key, $value)
+    public function __construct($key, $placeholder)
     {
         $this->key = $key;
-        $this->value = $value;
+        $this->placeholder = $placeholder;
     }
 
     abstract protected function render();

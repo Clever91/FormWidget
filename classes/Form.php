@@ -4,9 +4,9 @@ include_once(__DIR__."/HtmlElement.php");
 
 class Form 
 {
-    private $action;
-    private $method;
-    private $elements = [];
+    private string $action;
+    private string $method;
+    private array $elements = [];
 
     public function __construct($act, $meth = "get")
     {
