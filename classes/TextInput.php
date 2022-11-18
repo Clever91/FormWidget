@@ -1,13 +1,15 @@
 <?php
 
 include_once __DIR__."/../bases/BaseInput.php";
-require_once __DIR__."/../intercases/HtmlElement.php";
 
-class TextInput extends BaseInput implements HtmlElement
+class TextInput extends BaseInput
 {
     public function render(): string
     {
-        return "<input type='text' name='{$this->name}' placeholder='{$this->placeholder}'>";
+        return sprintf("<div>
+            <label>%s</label><br>
+            <input type='text' name='%s' placeholder='%s'>
+        </div>", $this->label, $this->name, $this->placeholder);
     }
 }
 

@@ -1,6 +1,7 @@
 <?php
+require_once __DIR__."/../intercases/HtmlElement.php";
 
-class BaseButton
+abstract class BaseButton implements HtmlElement
 {
     public string $name;
     public string $value;

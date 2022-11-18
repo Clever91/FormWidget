@@ -5,9 +5,9 @@ include_once __DIR__."/classes/PasswordInput.php";
 include_once __DIR__."/classes/Button.php";
 
 $form = new Form("/register", "post");
-$form->addElement(new TextInput("name", "", "Enter Name"));
-$form->addElement(new TextInput("login", "", "Enter Login"));
-$form->addElement(new PasswordInput("password", "", "Enter Password"));
+$form->addElement(new TextInput("Fullname ", "name", "Enter Name"));
+$form->addElement(new TextInput("Login", "login", "Enter Login"));
+$form->addElement(new PasswordInput("Password", "password", "Enter Password"));
 $form->addElement(new Button("submit", "Save", "submit"));
 
 ?>

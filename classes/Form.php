@@ -2,7 +2,7 @@
 
 include_once(__DIR__."/../intercases/HtmlElement.php");
 
-class Form 
+class Form implements HtmlElement
 {
     private string $action;
     private string $method;

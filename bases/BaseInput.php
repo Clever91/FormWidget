@@ -1,15 +1,16 @@
 <?php
+require_once __DIR__."/../intercases/HtmlElement.php";
 
-class BaseInput
+abstract class BaseInput implements HtmlElement
 {
+    public string $label;
     public string $name;
-    public string $value;
     public string $placeholder;
 
-    public function __construct(string $name, string $value = "", string $placeholder = "")
+    public function __construct(string $label, string $name, string $placeholder = "")
     {
+        $this->label = $label;
         $this->name = $name;
-        $this->value = $value;
         $this->placeholder = $placeholder;
     }
 }
