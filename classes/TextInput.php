@@ -1,12 +1,9 @@
 <?php
 class TextInput extends BaseInput
 {
-    public function render(): string
+    public function renderInput(): string
     {
-        return sprintf("<div>
-            <label>%s</label><br>
-            <input type='text' name='%s' placeholder='%s'>
-        </div>", $this->label, $this->name, $this->placeholder);
+        return sprintf("<input type='text' name='%s' placeholder='%s'>", $this->name, $this->placeholder);
     }
 }
 
