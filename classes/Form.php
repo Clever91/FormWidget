@@ -1,6 +1,6 @@
 <?php
 
-include_once(__DIR__."/HtmlElement.php");
+include_once(__DIR__."/../intercases/HtmlElement.php");
 
 class Form 
 {
@@ -22,7 +22,7 @@ class Form
         array_push($this->elements, $elem);
     }
 
-    public function render()
+    public function render(): string
     {
         $content = implode(PHP_EOL, array_map(fn($el) => $el->render(), $this->elements));
         return sprintf("<form action='%s' method='%s'>%s</form>", $this->action, $this->method, $content);

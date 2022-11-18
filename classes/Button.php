@@ -1,15 +1,10 @@
 <?php 
 
-include_once __DIR__."/HtmlElement.php";
+include_once __DIR__."/../bases/BaseButton.php";
+require_once __DIR__."/../intercases/HtmlElement.php";
 
-class Button extends HtmlElement
+class Button extends BaseButton implements HtmlElement
 {
-    public function __construct(string $type, string $value)
-    {
-        $this->type = $this->name = $type;
-        $this->value = $value;
-    }
-
     public function render(): string
     {
         return "<button type='{$this->type}' name='{$this->name}'>{$this->value}</button>";

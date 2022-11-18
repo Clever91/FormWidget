@@ -1,8 +1,9 @@
 <?php
 
-include_once __DIR__."/HtmlElement.php";
+include_once __DIR__."/../bases/BaseInput.php";
+require_once __DIR__."/../intercases/HtmlElement.php";
 
-class TextInput extends HtmlElement
+class TextInput extends BaseInput implements HtmlElement
 {
     public function render(): string
     {
