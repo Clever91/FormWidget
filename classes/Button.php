@@ -1,7 +1,4 @@
-<?php 
-
-include_once __DIR__."/../bases/BaseButton.php";
-
+<?php
 class Button extends BaseButton
 {
     public function render(): string

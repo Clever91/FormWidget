@@ -1,7 +1,4 @@
 <?php
-
-include_once __DIR__."/../bases/BaseInput.php";
-
 class TextInput extends BaseInput
 {
     public function render(): string

@@ -1,6 +1,4 @@
 <?php
-require_once __DIR__."/../intercases/HtmlElement.php";
-
 abstract class BaseButton implements HtmlElement
 {
     public string $name;

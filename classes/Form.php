@@ -1,7 +1,4 @@
 <?php
-
-include_once(__DIR__."/../intercases/HtmlElement.php");
-
 class Form implements HtmlElement
 {
     private string $action;

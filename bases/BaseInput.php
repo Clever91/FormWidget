@@ -1,6 +1,4 @@
 <?php
-require_once __DIR__."/../intercases/HtmlElement.php";
-
 abstract class BaseInput implements HtmlElement
 {
     public string $label;
