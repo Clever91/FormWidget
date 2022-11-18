@@ -6,6 +6,9 @@ class Form
 {
     private string $action;
     private string $method;
+    /**
+     * @var \HtmlElement[]
+    */
     private array $elements = [];
 
     public function __construct(string $action, string $method = "get")

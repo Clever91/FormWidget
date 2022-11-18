@@ -4,9 +4,9 @@ include_once __DIR__."/HtmlElement.php";
 
 class PasswordInput extends HtmlElement
 {
-    public function render() 
+    public function render(): string
     {
-        return "<input type='password' name='{$this->key}' placeholder='{$this->placeholder}'>";
+        return "<input type='password' name='{$this->name}' placeholder='{$this->placeholder}'>";
     }
 }
 

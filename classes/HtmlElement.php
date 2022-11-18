@@ -2,18 +2,18 @@
 
 abstract class HtmlElement
 {
-    public string $key;
+    public string $name;
     public string $value;
     public string $type;
     public string $placeholder;
 
-    public function __construct(string $key, string $placeholder)
+    public function __construct(string $name, string $placeholder)
     {
-        $this->key = $key;
+        $this->name = $name;
         $this->placeholder = $placeholder;
     }
 
-    abstract protected function render();
+    abstract protected function render(): string;
 }
 
 
