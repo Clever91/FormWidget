@@ -5,6 +5,11 @@ $form = new Form("/register", "post");
 $form->addElement(new TextInput("Fullname ", "name", "Enter Name"));
 $form->addElement(new TextInput("Login", "login", "Enter Login"));
 $form->addElement(new PasswordInput("Password", "password", "Enter Password"));
+$form->addElement(new Select("Select gender", "gender", [
+    new Option("", "Select gender"),
+    new Option("male", "Male"),
+    new Option("female", "Female"),
+]));
 $form->addElement(new Button("submit", "Save", "submit"));
 $form->addElement(new Button("reset", "Reset", "reset"));
 
