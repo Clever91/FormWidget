@@ -16,5 +16,3 @@ class Option implements HtmlElement
         return sprintf('<option name="%s">%s</option>', $this->name, $this->value);
     }
 }
-
-?>

@@ -10,5 +10,3 @@ include_once __DIR__."/classes/PasswordInput.php";
 include_once __DIR__."/classes/Button.php";
 include_once __DIR__."/classes/Option.php";
 include_once __DIR__."/classes/Select.php";
-
-?>

@@ -25,6 +25,3 @@ class Form implements HtmlElement
         return sprintf("<form action='%s' method='%s'>%s</form>", $this->action, $this->method, $content);
     }
 }
-
-
-?>

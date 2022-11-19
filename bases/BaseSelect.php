@@ -21,5 +21,3 @@ abstract class BaseSelect implements HtmlElement
         array_push($this->options, $option);
     }
 }
-
-?>

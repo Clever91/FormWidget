@@ -6,5 +6,3 @@ class Button extends BaseButton
         return sprintf("<button type='%s' name='%s'>%s</button>", $this->type, $this->name, $this->value);
     }
 }
-
-?>

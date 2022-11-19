@@ -12,6 +12,3 @@ abstract class BaseButton implements HtmlElement
         $this->type = $type;
     }
 }
-
-
-?>

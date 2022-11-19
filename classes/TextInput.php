@@ -6,6 +6,3 @@ class TextInput extends BaseInput
         return sprintf("<input type='text' name='%s' placeholder='%s'>", $this->name, $this->placeholder);
     }
 }
-
-
-?>

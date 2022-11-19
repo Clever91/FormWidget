@@ -14,5 +14,3 @@ class Select extends BaseSelect
         ', $this->label, $this->name, $content);
     }
 }
-
-?>

@@ -22,6 +22,3 @@ abstract class BaseInput implements HtmlElement
 
     abstract public function renderInput(): string;
 }
-
-
-?>

@@ -6,6 +6,3 @@ class PasswordInput extends BaseInput
         return sprintf("<input type='password' name='%s' placeholder='%s'>", $this->name, $this->placeholder);
     }
 }
-
-
-?>
